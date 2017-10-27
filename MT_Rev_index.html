@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Title</title>
+        <link href="style.css" rel="stylesheet" type="text/css"/>
+        <link href="bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css"/>
+        
+    </head>
+    
+    
+    <body>
+        <div id = "control">
+            <button id = "ctrl_butt_1" class = "ctrl_button">Button 1</button>
+            <button id = "ctrl_butt_2" class = "ctrl_button">Button 2</button>
+            <button id = "ctrl_butt_3" class = "ctrl_button">Button 3</button>
+            
+            <input type = "text" id = "ctrl_txt_field"/>
+            <input type = "range" id = "ctrl_range" min = '1' max = '50' step = '1' value = '25' oninput = "change_img_size()"/>
+            
+            <button id = "ctrl_button_plus" class = "ctrl_button2">+</button>
+            <button id = "ctrl_button_desel" class = "ctrl_button2">Deselect</button>
+            
+            <div id = "control_toggle">Controls</div>
+        </div>
+        
+        <div id = "center">
+            
+                <img id = "center_img" />
+            
+            
+            <div id = "center_thumb"></div>
+        </div>
+        
+        <div id = "status"></div>
+        <div id = "selection">Currently selected: None</div>
+            
+        
+        <script src="myjs.js"></script>
+        <script src="bootstrap/js/bootstrap.js"></script>
+        
+    </body>
+</html>
