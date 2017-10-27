@@ -209,3 +209,14 @@ document.getElementById("ctrl_button_desel").addEventListener("click", function(
     set_selection("Currently selected: None");
 });
 
+document.getElementById("delete_button").addEventListener("click", function(){
+    var thumb_div = document.getElementById("center_thumb");
+    while (thumb_div.firstChild){
+            thumb_div.removeChild(thumb_div.firstChild);
+    }
+    thumb_count = 0;
+    selected_thumb_id = '-1';
+    set_selection("Currently selected: None");
+    set_status("All thumbnails deleted");
+    
+});

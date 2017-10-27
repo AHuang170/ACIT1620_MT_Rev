@@ -117,3 +117,11 @@
     background-color: gainsboro;
     text-align: center;
 }
+
+#delete_button{
+    position: fixed;
+    top:0px;
+    right:0px;
+    
+}
+
